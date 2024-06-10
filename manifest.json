@@ -1,6 +1,6 @@
 {
-  "name": "Hello World",
-  "short_name": "Hello",
+  "name": "Weather App",
+  "short_name": "Weather",
     "icons": [
         {
           "src": "images/konoha192-192.png",

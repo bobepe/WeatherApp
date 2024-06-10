@@ -6,6 +6,7 @@
         <link rel="manifest" href="./manifest.json">
         <link rel="stylesheet" href="src/style.css">
         <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <meta name="description" content="Weather app"/>
         <link rel="apple-touch-icon" href="images/icon-152.png">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="theme-color" content="white"/>
@@ -20,25 +21,25 @@
         <div class="card">
             <div class="card__header">
                 <input type="text" placeholder="Zadejte město" spellcheck="false">
-                <button><img src="images/search.png"></button>
+                <button aria-label="search"><img src="images/search.png" alt="search"></button>
             </div>
             <div class="card__error">
                 <p>Neexistující město</p>
             </div>
             <div class="card__body">
-                <img src="images/drizzle.png">
+                <img src="images/Drizzle.png" alt="status">
                 <h1 class="temp">20°C</h1>
                 <h2 class="city">Olomouc</h2>
                 <div class="info">
                     <div class="info__item">
-                        <img src="images/humidity.png">
+                        <img src="images/humidity.png" alt="humidity">
                         <div>
                             <p class="humidity">50%</p>
                             <p>Vlhkost vzduchu</p>
                         </div>
                     </div>
                     <div class="info__item">
-                        <img src="images/wind.png">
+                        <img src="images/wind.png" alt="wind">
                         <div>
                             <p class="wind">15 km/h</p>
                             <p>Rychlost větru</p>

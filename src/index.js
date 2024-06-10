@@ -25,8 +25,6 @@ async function checkWeather(city) {
 
   let data = await res.json();
 
-  console.log(data);
-
   document.querySelector(".city").innerHTML = data.name;
   document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
   document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
@@ -34,6 +32,7 @@ async function checkWeather(city) {
 
   weatherIco.src = `images/${data.weather[0].main}.png`
   document.querySelector(".card__body").style.display = "block";
+  document.querySelector(".card__error").style.display = "none";
 }
 
 searchBtn.addEventListener("click", () => {
